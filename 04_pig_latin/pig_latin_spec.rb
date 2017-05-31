@@ -68,5 +68,9 @@ describe "#translate" do
   # Test-driving bonus:
   # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
   # * retain the punctuation from the original phrase
+  it "Words retain their original puntuation" do
+    s = translate("Brown dogs met marry")
+    expect(s).to eq ("Ownbray ogsday etmay arrymay")
+  end
 
 end
